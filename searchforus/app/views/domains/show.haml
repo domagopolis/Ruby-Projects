@@ -1,0 +1,7 @@
+- @title = @domain.domain_url
+#show
+  .domain
+    .title= @domain.domain_url
+    .date= time_ago_in_words(@domain.created_at || Time.now) + ' ago'
+%p= link_to 'Visit site', @domain.domain_url, :target => "_blank"
+%p= link_to 'View all domains', url_for(:domains, :index)

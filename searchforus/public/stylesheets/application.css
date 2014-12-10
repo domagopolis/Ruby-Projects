@@ -1,0 +1,40 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%; }
+
+header {
+  width: 1000px;
+  margin: auto; }
+  header h1 {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: bold; }
+  header h2 {
+    text-align: center;
+    font-size: 1.5em; }
+
+main {
+  width: 1000px;
+  margin: auto;
+  min-height: 400px;
+  padding: 30px; }
+  main form {
+    padding: 30px 0;
+    text-align: center; }
+    main form input[type="search"] {
+      width: 50%;
+      height: 30px; }
+  main section {
+    width: 75%;
+    float: left; }
+  main aside {
+    width: 25%;
+    float: right; }
+
+footer {
+  width: 1000px;
+  margin: auto; }
+  footer p {
+    text-align: center; }
+
+/*# sourceMappingURL=application.css.map */

@@ -1,0 +1,23 @@
+!!! Strict
+%html
+	%head
+		%title= [@title, "Search For Us"].compact.join(" | ")
+		= stylesheet_link_tag 'reset', 'application'
+		= javascript_include_tag 'jquery', 'application'
+		= yield_content :include
+	%body
+		%header
+			%h1 Search For Us
+			%h2 A search engine for the rest of us!
+		%main
+			%form{ :controller => 'domain', :method => 'get' }
+				%input{ :type => "search", :name => "query", :value => params[:query] }
+				%input{ :type => "submit", :name => "Search", :value => "Search" }
+			%section
+				#main= yield
+			%aside
+				%ul.menu
+					%li= link_to 'Home', "/"
+					%li= link_to 'Registered Domains', url_for(:domains, :index)
+		%footer
+			%p Copyright (c) 2015 Josh Domagala

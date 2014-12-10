@@ -1,0 +1,3 @@
+.post
+  .title= link_to domain.domain_url, url_for(:domains, :show, :id => domain)
+  .date= time_ago_in_words(domain.created_at || Time.now) + ' ago'
