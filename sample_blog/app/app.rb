@@ -65,7 +65,7 @@ module SampleBlog
     #
 
     get "/" do
-        "Hello World!"
+        render :haml, "%p Hello World"
     end
 
     get :about, :map => '/about-us' do
